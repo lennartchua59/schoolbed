@@ -3,7 +3,7 @@ let obj = {
     "age":20,
     "class":"1b06",
     "cca":["dragonboat", "basketball" , "badminton", "photography"],
-    "parent" 
+    
 }
 console.log(obj.name)
 console.log(obj.age)
