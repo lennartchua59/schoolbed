@@ -13,4 +13,22 @@ h.kenahit(10000)
 let f2 = require("./formula2")
 console.log(f2.multiply(2,3))
 //-- call mulitply and provide a callback
-f2.multiply
+f2.multiply(2, 3, //-- a, b
+    (error, result)=>{ //-- callback
+        if(error){
+            console.log(error)
+
+        }else if(result){
+            console.log( "the result is " + result)
+
+        }
+
+    }
+)
+
+f2.multiply(Infinity, 3, //-- a,b
+    (error, result)=>{ //-- callback
+        if(error){
+            
+        }
+    }
